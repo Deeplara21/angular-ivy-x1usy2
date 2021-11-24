@@ -1,0 +1,56 @@
+<div class="card">
+  <h3 [ngClass]="classes">STUDENT MARK DETAILS</h3>
+  <form #newForm="ngForm" (ngSubmit)="onSubmit(newForm)">
+    Student Name
+    <input
+      type="text"
+      [placeholder]="'Enter_name'"
+      id="text1"
+      [(ngModel)]="text1"
+      name="formuser"
+    />
+    <br /><br />
+    Roll no
+    <input
+      type="text"
+      [placeholder]="'Enter_rollno'"
+      id="text2"
+      [(ngModel)]="text2"
+      name="formnum"
+    />
+    <br /><br />
+    Mark1
+    <input
+      type="text"
+      [placeholder]="'Enter_mark1'"
+      id="text3"
+      [(ngModel)]="text3"
+      name="formm1"
+    />
+    <br /><br />
+    Mark2
+    <input
+      type="text"
+      [placeholder]="'Enter_mark2'"
+      id="text4"
+      [(ngModel)]="text4"
+      name="formm2"
+    />
+    <br /><br />
+    Mark3
+    <input
+      type="text"
+      [placeholder]="'Enter_mark3'"
+      id="text5"
+      [(ngModel)]="text5"
+      name="formm3"
+    />
+    <br /><br />
+    <!-- Total
+    <input type="text" id="text6" name="formPass" />
+    <br /><br /> -->
+  
+    <button [disabled]="isUnchanged" type="submit">Calculate</button>
+  </form>
+  </div>
+  
